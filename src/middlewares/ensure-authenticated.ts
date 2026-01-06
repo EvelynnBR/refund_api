@@ -16,7 +16,7 @@ export function ensureAuthenticated(
   try {
     const authHeader = req.headers.authorization
     if (!authHeader) {
-      throw new AppError("JWT token não encontrado")
+      throw new AppError("JWT token não encontrado", 401)
     }
 
     const [, token] = authHeader.split(" ")
@@ -33,6 +33,6 @@ export function ensureAuthenticated(
 
     return next()
   } catch (error) {
-    throw new AppError("Invalid JWT token")
+    throw new AppError("Invalid JWT token", 401)
   }
 }

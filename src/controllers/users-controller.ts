@@ -31,6 +31,7 @@ class UsersController {
         name,
         email,
         password: hashedPassword,
+        role,
       },
     })
 

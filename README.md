@@ -129,4 +129,4 @@ src/
 
 ## 📝 Licença
 
-Este projeto está sob a licença ISC. Feito com 💜 por [Seu Nome].
+Este projeto está sob a licença ISC. Feito com 💜 por Evelyn.
